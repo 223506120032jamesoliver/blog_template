@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about my self</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        display: flex;
+        background-image: url(yeah.jpg);
+        background-size: cover;
+        background-position: center;
+
+    }
+
+    .main-container{
+        display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+            padding: 20px;
+    }
+
+    .image-container{
+        flex: 1;
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        margin-top: 10%;
+        height: 100%;
+
+    }
+
+    .image-container img{
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        object-fit: cover;
+    
+    }
+
+    .text-container{
+       text-align: center;
+       margin-top: 20px;
+       color: white;
+    }
+
+    h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.2rem;
+        }
+
+        .details {
+            margin-top: 20px;
+            text-align: left;
+            font-size: 1.1rem;
+            color: white;
+        }
+
+        .details p {
+            font-size: 5px 0;
+        }
+
+        .rgb-button {
+            position: absolute;
+            bottom: 55px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: linear-gradient(to right, rgb(34, 193, 195), rgb(253, 187, 45)); /* RGB Gradient */
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            margin-top: 20px;
+        }
+
+        .rgb-button:hover {
+            background: linear-gradient(to right, rgb(253, 187, 45), rgb(34, 193, 195)); /* Reverse the RGB gradient on hover */
+        }
+
+        .marquee{
+            width: 100%;
+            color: white;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            text-align: center;
+            font-size: 1.2rem;
+            font-weight: bold;
+            animation: marquee-animation 10s linear infinite;
+        }
+
+        @keyframes marquee-animation {
+            0%{
+                transform: translateX(100%);
+            }
+            100%{
+                transform: translateX(-100%)
+            }
+        }
+
+</style>
+<body>
+
+    <div class="text-container">
+        <h1>About Me</h1>
+        <p>Welcome to my profile page! Here's a little about me.</p>
+    </div>
+        
+    <div class="image-container">
+        <img src="me.jpg" alt="Profile Picture">
+
+        <a href="https://www.facebook.com/jamesoliver.segundo" target="_blank">
+            <button class="rgb-button">Go to Facebook</button>
+        </a>
+    </div>
+    
+    
+    <div class="details">
+        <p><strong>Name:</strong> James oliver S. Alagan</p>
+        <p><strong>Grade:</strong> 12</p>
+        <p><strong>Section:</strong> ICT-A</p>
+        <p><strong>Hobbies:</strong> Singing, Coding, watching movies</p>
+    </div>
+</div>
+
+<div class="marquee">
+<p>this page is on development</p>
+</div>
+    </body>
+
+
+</html>
